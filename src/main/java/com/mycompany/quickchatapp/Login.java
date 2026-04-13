@@ -62,11 +62,10 @@ class Login {
       }
         
     }  
-    
-    //Method to check login credentials
+ //Method to check login credentials 
     boolean loginUser(String username, String password, String loginUsername, String loginPassword){
         return username.equals(loginUsername) && password.equals(loginPassword);
-    }
+    }   
     
     //Method to return login status
     String returnLoginStatus(String name, String surname, String username, String password, String loginUsername, String loginPassword){
