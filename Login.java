@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 class Login {
      
     
-    //Method to valida the username
+    //Method to validate the username
     boolean checkuserName(String username){
         return username.contains("_")&& username.length()<=5;
     }
