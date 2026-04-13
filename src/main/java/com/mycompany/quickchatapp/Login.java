@@ -14,10 +14,7 @@ import java.util.regex.Pattern;
 class Login {
      
     
-    //Method to validate the username
-    boolean checkuserName(String username){
-        return username.contains("_")&& username.length()<=5;
-    }
+    
     
     //Method to validate the cellphone number
     boolean checkCellphoneNumber(String cellphoneNumber){
@@ -34,7 +31,7 @@ class Login {
         return matcher.matches();
     }
     
-    //Method to validate password
+    //method to validate password
     boolean checkPasswordComplexity(String password){
         //Declare a variable to store a pattern
         String regex="^(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}$";
