@@ -50,8 +50,7 @@ class Login {
         
     }
     
-    
-    //Method to return registration status
+     //Method to return registration status
     String registerUser(String name, String surname, String username, String password, String cellphoneNumber){
       if (checkuserName(username)&&checkCellphoneNumber(cellphoneNumber)&&checkPasswordComplexity(password)){
           return "User successfully registered.";
@@ -60,7 +59,8 @@ class Login {
           System.exit(0);
           return null;
       }
-        
+
+           
     }  
  //Method to check login credentials 
     boolean loginUser(String username, String password, String loginUsername, String loginPassword){
