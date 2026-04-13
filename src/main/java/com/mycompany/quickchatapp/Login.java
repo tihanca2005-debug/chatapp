@@ -13,7 +13,10 @@ import java.util.regex.Pattern;
  */
 class Login {
      
-    
+    // method to validate username
+    boolean checkuserName(String username){
+        return username.contains("_")&& username.length()<=5;
+    }
     
     
     //Method to validate the cellphone number
