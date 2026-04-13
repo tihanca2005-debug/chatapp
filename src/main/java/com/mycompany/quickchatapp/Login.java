@@ -67,7 +67,8 @@ class Login {
         return username.equals(loginUsername) && password.equals(loginPassword);
     }   
     
-    //Method to return login status
+  
+  //Method to return login status
     String returnLoginStatus(String name, String surname, String username, String password, String loginUsername, String loginPassword){
         
         if (loginUser(username, password, loginUsername, loginPassword)){
@@ -75,5 +76,5 @@ class Login {
         }else{
             return "Username or password incorrect, please try again.";   
     }
-}
+  }
 }
